@@ -1,134 +1,79 @@
-<!--
-<html>
-	<head>
-		<title>CALCULATOR</title>
-	</head>
-	
-	<body>
-		<form name='"calculatorJS">
-		
-		
-			<table>
-				<tr>
-					<td colspan="4" input name="display" type="text">
-					</td>
-				</tr>
-				<tr>
-					<td><input type="button" value="1" onclick="calculator.display.value +='1' "></td>
-					<td><input type="button" value="2" onclick="calculator.display.value +='2' "></td>
-					<td><input type="button" value="3" onclick="calculator.display.value +='3' "></td>
-					<td><input type="button" value="+" onclick="calculator.display.value +='+ '"></td>
-				</tr>
-				
-					<tr>
-					<td><input type="button" value="4" onclick="calculator.display.value +='4' "></td>
-					<td><input type="button" value="5" onclick="calculator.display.value +='5' "></td>
-					<td><input type="button" value="6" onclick="calculator.display.value +='6' "></td>
-					<td><input type="button" value="-" onclick="calculator.display.value +='- '"></td>
-				</tr>
-				
-					<tr>
-					<td><input type="button" value="7" onclick="calculator.display.value +='7' "></td>
-					<td><input type="button" value="8" onclick="calculator.display.value +='8' "></td>
-					<td><input type="button" value="9" onclick="calculator.display.value +='9' "></td>
-					<td><input type="button" value="*" onclick="calculator.display.value +='* '"></td>
-				</tr>
-				
-				<tr>
-					
-				<td><input type="button" value="c" onclick="calculator.display.value  ='  ' "></td>
-
-				<td><input type="button" value="0" onclick="calculator.display.value +='0' "></td>
-
-				<td><input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
-				<td><input type="button" value="/" onclick="calculator.display.value +='/' "></td>
-				</tr>
-			</tr>
-			
-		</table>
-				
-					
-								
-	
-	</body>
-</html>
-
--->
-
-
-<!DOCTYPE html>
-
 <html>
 
 	<head>
 
 		<title> Simple calculator</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	</head>
 
 <body>
+<div>
+	<form name ="calculator">
 
-<form name ="calculator">
-
-	<table>
-
-		<tr>
-
-			<td colspan="4">
-
-				<input type="text" name="display">
-
-			</td>
-
-		</tr>
-
-		<tr>
-
-			<td><input type="button" value="1" onclick="calculator.display.value +='1' "></td>
-
-			<td><input type="button" value="2" onclick="calculator.display.value +='2' "></td>
-
-			<td><input type="button" value="3" onclick="calculator.display.value +='3' "></td>
-
-			<td><input type="button" value="+" onclick="calculator.display.value +='+' "></td>
-
-		</tr>
-
-		<tr>
-
-			<td><input type="button" value="4" onclick="calculator.display.value +='4' "></td>
-
-			<td><input type="button" value="5" onclick="calculator.display.value +='5' "></td>
-
-			<td><input type="button" value="6" onclick="calculator.display.value +='6' "></td>
-
-			<td><input type="button" value="-" onclick="calculator.display.value +='-' "></td>
-
-		</tr>
-
-		<tr>
-
-			<td><input type="button" value="7" onclick="calculator.display.value +='7' "></td>
-
-			<td><input type="button" value="8" onclick="calculator.display.value +='8' "></td>
-
-			<td><input type="button" value="9" onclick="calculator.display.value +='9' "></td>
-
-			<td><input type="button" value="*" onclick="calculator.display.value +='*' "></td>
+		<table class="table table-bordered table-dark">
 
 			<tr>
 
-			<td><input type="button" value="c" onclick="calculator.display.value  ='  ' "></td>
+				<td colspan="4">
 
-			<td><input type="button" value="0" onclick="calculator.display.value +='0' "></td>
+					<input type="text" name="display">
 
-			<td><input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+				</td>
 
-			<td><input type="button" value="/" onclick="calculator.display.value +='/' "></td>
+			</tr>
 
-		</tr>			
+			<tr>
 
-	</table>	
+				<td><input type="button" value="1" onclick="calculator.display.value +='1' "></td>
+
+				<td><input type="button" value="2" onclick="calculator.display.value +='2' "></td>
+
+				<td><input type="button" value="3" onclick="calculator.display.value +='3' "></td>
+
+				<td><input type="button" value="+" onclick="calculator.display.value +='+' "></td>
+
+			</tr>
+
+			<tr>
+
+				<td><input type="button" value="4" onclick="calculator.display.value +='4' "></td>
+
+				<td><input type="button" value="5" onclick="calculator.display.value +='5' "></td>
+
+				<td><input type="button" value="6" onclick="calculator.display.value +='6' "></td>
+
+				<td><input type="button" value="-" onclick="calculator.display.value +='-' "></td>
+
+			</tr>
+
+			<tr>
+
+				<td><input type="button" value="7" onclick="calculator.display.value +='7' "></td>
+
+				<td><input type="button" value="8" onclick="calculator.display.value +='8' "></td>
+
+				<td><input type="button" value="9" onclick="calculator.display.value +='9' "></td>
+
+				<td><input type="button" value="*" onclick="calculator.display.value +='*' "></td>
+
+				<tr>
+
+				<td><input type="button" value="c" onclick="calculator.display.value  ='  ' "></td>
+
+				<td><input type="button" value="0" onclick="calculator.display.value +='0' "></td>
+
+				<td><input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+
+				<td><input type="button" value="/" onclick="calculator.display.value +='/' "></td>
+
+			</tr>
+
+		</table>
+</div>
+
+
 
 </body>
 
